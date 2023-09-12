@@ -25,7 +25,7 @@ Atenção, deve validar este formulário utilizando apenas recursos do HTML5.
     <h1>Formulário de Cadastro</h1>
     </header>   
 
-    <form action="envia.html" method="post">
+    <form name="form" action="envia.html" enctype="multipart/form-data">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -38,6 +38,8 @@ Atenção, deve validar este formulário utilizando apenas recursos do HTML5.
         <button type="reset">Limpar</button>
         <a href="index.html"><button type="button">Voltar</button></a>
         <button type="submit">Enviar</button>
+
+
     </form>
 
     <footer>
