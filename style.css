@@ -25,13 +25,17 @@
   align-items: center;
   margin: auto;
   transition-duration: 0.5s;
-  
-	
+  max-width: 100%;
 }
 
 .inicio > h1, h2 {
   font-family: var(--fontetitulo);
 }
+
+a.inicio:visited{ 
+    color: #c8c8c8;
+  }
+
 .aulas_pgs {
     font-family: var(--fontepadrao);
     font-size: var(--fontesizebody);
@@ -65,14 +69,45 @@ header > h4 {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
 
+nav {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.082);
+  padding: 10px;
+}
+
+nav > a {
+  color: #c8c8c8;
+  padding: 8px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+}
+
+nav > a:hover{
+  background-color: var(--cor02);
+  border-radius: 5em;
+  text-decoration: underline;
+
+}
+
+a.aulas_pgs:visited{
+  color: #756b6b;
+}
+
+p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.2em;
+  font-size: 1em;
+}
+
 img{
     display: block;
     align-items: center;
     text-align: center;
     margin: auto;
-
-    
 }
+
 video{ 
   width: 100%;
 }
@@ -80,6 +115,7 @@ video{
 figcaption{
   font-size: 9px;
   color: dimgray;
+  float: right
 }
 
 #pc {
@@ -87,37 +123,6 @@ figcaption{
 
 }
 
-/*Dropdown Index page*/
-.dropbtn {
-    font-size: 28px;
-   border: none;
- }
- 
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
- 
- .drop-content {
-   display: none;
-   position: absolute;
-   background-color: black;
-   min-width: 25px;
-   z-index: 1;
- }
- 
- .drop-content a {
-   color: #c8c8c8;
-   padding:8px 8px;
-   text-decoration: none;
-   display: block;
- }
- 
- .drop-content a:hover {background-color: #0c0c0c; color:blue;}
- 
- .dropdown:hover .dropdown-content {display: block;}
- 
- .dropdown:hover .dropbtn {background-color: red;}
 
  footer{
     font-family: 'Encode Sans SC', sans-serif;;
