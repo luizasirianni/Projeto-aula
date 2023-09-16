@@ -187,6 +187,19 @@ form{
   padding: 15px;
 }
 
+audio {
+  width: 100%;
+  max-width: 400px;
+  padding-top: 20px;
+}
+
+.main_audio{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #voltar{
   display: flex;
   flex-direction: column;
