@@ -17,6 +17,7 @@
     <header>
     <h1>Qual é a sua linguagem de programação preferida?</h1>
     </header>
+    <h2>Escolha uma opção:</h2>
     <form action="#" method="post">
         <input type="radio" id="python" name="linguagem" value="Python">
         <label for="python">Python</label><br>
@@ -35,8 +36,17 @@
 
         <input type="radio" id="outros" name="linguagem" value="Outros">
         <label for="outros">Outros</label><br><br>
-        
+        <!--to be resolved by JS, should open this option only when "outros" option is selected-->
+        <details>
+            <summary>Clique aqui caso tenha selecionado "Outros"</summary>
+            <label for="textoOutros">Por favor, especifique:</label>
+            <input type="text" id="textoOutros" name="textoOutros">
+        </details>
+
         <input type="submit" value="Enviar">
+
+        
+
     </form>
     <footer>
         <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>

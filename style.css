@@ -178,10 +178,31 @@ figcaption{
   text-align: center;
 }
 
-
 #pc {
     max-width: fit-content;
 
+}
+
+form{
+  padding: 15px;
+}
+
+#voltar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh; 
+  margin: 0;
+}
+
+#voltar button{
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+details{
+  padding-bottom: 15px;
 }
 
 hr{
