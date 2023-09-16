@@ -111,6 +111,12 @@ p {
   line-height: 1.2em;
   font-size: 1em;
 }
+
+
+p.porto{
+  font-size: larger;
+  padding: 15px;
+}
 .url_font{
   font-family: var(--fontelinks);
 }
@@ -133,6 +139,21 @@ picture{
 }
 
 div.video{
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+div.mapa > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+div.mapa{
   margin-bottom: 30px;
   padding: 20px;
   padding-bottom: 50%;
