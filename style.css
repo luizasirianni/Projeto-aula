@@ -32,6 +32,7 @@
 
 .inicio > h1, h2 {
   font-family: var(--fontetitulo);
+  padding: 15px;
 }
 
 a.inicio:visited{ 
@@ -47,6 +48,10 @@ a.inicio:visited{
     margin: auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+    
+}
+article{
+  padding: 15px;
 }
 
 header {
@@ -123,10 +128,24 @@ img{
     margin: auto;
 }
 
-video{ 
-  width: 100%;
+picture{
+  padding: 10px;
 }
 
+div.video{
+  margin-bottom: 30px;
+  padding: 20px;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
 figcaption{
   font-size: 9px;
   color: dimgray;
@@ -138,6 +157,13 @@ figcaption{
 
 }
 
+hr{
+  padding: 5px;
+  border-top: 1px;
+  border-left: #c8c8c8;
+  border-right: #c8c8c8;
+  margin-bottom: 10px;
+}
 
  footer > p{
     font-family: 'Encode Sans SC', sans-serif;;
