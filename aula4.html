@@ -15,21 +15,26 @@
     <header>
         <h1>Fotos da minha cidade atual - Porto PT</h1>
     </header>
-    <picture>
+    <article>
+        <h2>Ponte Dom Luis II</h2>
         <p class="porto">Esta é a Ponte Dom Luis II, ponte que liga as cidades do Porto e Vila Nova de Gaia separadas pelo rio Douro, em Portugal. </p>
-        <img src="imgs/pexels-magda-ehlers-2549573.jpg" alt="ponte d luis">
-        <figcaption>Foto: Ponte Dom Luis II, Porto PT - Fonte: 
-            <a href="">https://www.pexels.com/pt-br/foto/arquitetura-ponte-espaco-cidade-2549573/</a>
-        </figcaption>
-    </picture>
-
-    <picture>
-        <p class="porto">A rua Santa Catarina é a zona comercial mais importante do Porto. Essa rua de uso exclusivo para pedestres da parte alta da cidade. Concentra milhares de turistas por dia, de diferentes partes do mundo</p>
-        <img src="imgs/rua-santa-catarina-shutterstock.jpg" alt="rua santa catarina">
-        <figcaption>Foto: Rua Santa Catarina, Porto PT - Fonte: 
-            <a href="">https://portosecreto.co/rua-santa-catarina/</a>
-        </figcaption>
-    </picture>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imgs/ponte-pequena.jpg">
+            <img src="imgs/pexels-magda-ehlers-2549573.jpg" alt="ponte d luis">
+            <figcaption class="caption">Foto: Ponte Dom Luis II, Porto PT - Fonte:
+                <a href="">https://www.pexels.com/pt-br/foto/arquitetura-ponte-espaco-cidade-2549573/</a>
+            </figcaption>
+        </picture>
+        <picture>
+            <h2>Rua Santa Catarina</h2>
+            <p class="porto">A rua Santa Catarina é a zona comercial mais importante do Porto. Essa rua de uso exclusivo para pedestres da parte alta da cidade. Concentra milhares de turistas por dia, de diferentes partes do mundo</p>
+            <source media="(max-width: 800px)" srcset="imgs/rua-pequena.jpg">
+            <img src="imgs/rua-santa-catarina-shutterstock.jpg" alt="rua santa catarina">
+            <figcaption class="caption">Foto: Rua Santa Catarina, Porto PT - Fonte:
+                <a href="">https://portosecreto.co/rua-santa-catarina/</a>
+            </figcaption>
+        </picture>
+    </article>
     <footer>
         <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>
     </footer>

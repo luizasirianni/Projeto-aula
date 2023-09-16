@@ -115,7 +115,7 @@ p {
 
 p.porto{
   font-size: larger;
-  padding: 15px;
+  padding: 10px;
 }
 .url_font{
   font-family: var(--fontelinks);
@@ -132,6 +132,7 @@ img{
     align-items: center;
     text-align: center;
     margin: auto;
+    max-width: 700px;
 }
 
 picture{
@@ -167,11 +168,16 @@ div.video > iframe {
   width: 90%;
   height: 90%;
 }
+
 figcaption{
   font-size: 9px;
   color: dimgray;
-  float: right
 }
+
+.caption {
+  text-align: center;
+}
+
 
 #pc {
     max-width: fit-content;
