@@ -112,10 +112,14 @@ p {
   font-size: 1em;
 }
 
-
 p.porto{
   font-size: larger;
   padding: 10px;
+}
+
+.explica{
+  text-indent: 0;
+  margin-left: 20px;
 }
 .url_font{
   font-family: var(--fontelinks);
@@ -125,6 +129,11 @@ ul{
   list-style-type: '\1F4CC'; 
   list-style-position: inside;
   padding: 10px;
+}
+
+.enum{
+  list-style-type: lower-alpha;
+  list-style-position: inside;
 }
 
 img{
