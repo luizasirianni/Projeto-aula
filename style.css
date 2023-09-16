@@ -134,6 +134,13 @@ ul{
 .enum{
   list-style-type: lower-alpha;
   list-style-position: inside;
+  padding-left: 25px;
+}
+
+.enum li{
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: #284A49;
 }
 
 img{
