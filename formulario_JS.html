@@ -1,0 +1,63 @@
+<!-- 1.	Utilizando o formulário desenvolvido na Aula 5, faça uma cópia do mesmo e salve-o como formulário_js.html. Retire os campos de validação do HTML 5 e faça as seguintes validações utilizando apenas recursos da linguagem JavaScript:
+
+- Valide todos os campos, para que sejam obrigatoriamente preenchidos.
+- Valide o campo idade, para que somente números sejam digitadossobre 
+- Valide o campo idade também para que não permita que o usuário copie e cole algum    valor não numérico neste campo.
+- Se todos os campos estiverem preenchidos corretamente, emita a mensagem: Formulário validado com Sucesso!!
+
+2.	Utilizando recursos JS crie um contador, para contar o tempo de permanência do usuário no seu site. Insira este contador na index.html. -->
+<!-- 
+1.	Crie uma página HTML, e salve-a com o nome formulario.html. Nela crie um formulário do tipo Cadastro de clientes. O formulário obrigatoriamente deve ter campos de identificação do cliente conforme segue
+NOME, EMAIL, IDADE -> e botões: voltar, limpar e enviar
+•	O botão Limpar – permite limpar os dados inseridos (Deve estar em funcionamento)
+•	Voltar – permite retornar à página anterior (Devem apenas inserir o botão simbolicamente, não precisa estar em funcionamento, pois este recurso será visto na Aula 08)
+•	Enviar - permite submeter o formulário à outra página. O formulário deverá ser submetido a página envia.html (esta página também deve ser criada), a qual deverá conter apenas a mensagem: Cadastro realizado com sucesso!!
+•	Valide o form com os atributos do HTML 5, para que todos os campos sejam obrigatoriamente preenchidos.
+•	O campo e-mail também deve ser validado para que seja informado um tipo e-mail válido.
+•	O campo idade não deve permitir que caracteres não numéricos sejam inseridos. 
+
+Atenção, deve validar este formulário utilizando apenas recursos do HTML5.
+
+3.	Modifique a index.html, criando os links de acesso às páginas formulario.html, e enquete.html no menu da AULA 5. Portanto, o menu Aula 3, terá duas páginas vinculadas. OBS: rever o código fonte do primeiro menu do exemplo do template.
+ -->
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Aula 5</title>
+     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="style.css">
+     <script type="text/javascript" src="formulario.js"></script>
+ </head>
+ <body class="aulas_pgs">
+     <header>
+     <h1>Formulário de Cadastro</h1>
+     </header>   
+ 
+     <h2>Preencha os campos abaixo:</h2>
+     <form name="form" action="envia.html" enctype="multipart/form-data">
+         <label for="nome">Nome:</label>
+         <br>
+         <input type="text" id="nome" name="nome"><br><br>
+ 
+         <label for="email">E-mail:</label>
+         <br>
+         <input type="email" id="email" name="email"><br><br>
+ 
+         <label for="idade">Idade:</label>
+         <br>
+         <input type="number" id="idade" name="idade" min="0" step="1"><br><br>
+ 
+         <button type="reset" id="limpa">Limpar</button>
+         <a href="index.html"><button type="button" id="volta">Voltar</button></a>
+         <button type="submit" id="envia">Enviar</button>
+ 
+ 
+     </form>
+ 
+     <footer>
+         <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>
+     </footer>
+ </body>
+ </html>
