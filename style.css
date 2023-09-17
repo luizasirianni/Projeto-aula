@@ -142,7 +142,42 @@ ul{
   font-size: 1.1em;
   color: #284A49;
 }
+label{
+  margin: 5px;
+}
 
+form input{
+  padding: 5px;
+  margin: 5px;
+}
+
+input#nome, #email{
+  width: 50%;
+}
+
+input#idade{
+  width: 5%;
+}
+
+form button{
+  padding: 10px;
+  margin: 5px;
+}
+
+form button#limpa:hover{
+  background-color: rgb(199, 169, 92);
+  color: cornsilk;
+}
+
+form button#volta:hover{
+  background-color: #604e5c;
+  color: cornsilk;
+}
+
+form button#envia:hover{
+  background-color: #375958;
+  color: cornsilk;
+}
 img{
     display: block;
     align-items: center;
