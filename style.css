@@ -277,6 +277,15 @@ hr{
   margin-bottom: 10px;
 }
 
+.my_links{
+  text-align: center;
+}
+
+.my_links > a{
+  display: inline-block; 
+  margin-right: 10px;
+}
+
  footer > p{
     font-family: 'Encode Sans SC', sans-serif;;
     margin-bottom: 10px;
