@@ -19,46 +19,50 @@
     <map name="aaa"></map> 
     <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.944296370292!2d-8.630411923507353!3d41.15756681021829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465081bce3a1d%3A0xd3ae142886339fc7!2sShopping%20Bras%C3%ADlia!5e0!3m2!1spt-PT!2spt!4v1694263202845!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <p>O polo do Porto fica localizado no Shopping Brasília, no centro do Porto, próximo a rotunda da Boa Vista</p>
-        <!-- <!DOCTYPE html>: Define o tipo de documento como HTML5.
+        <article>
+            <h2>Explicação das tags utilizadas na página index</h2>
+            <ul class="etags">
+                <li> &lt;!DOCTYPE html&gt;: <p>Esta é uma declaração do tipo de documento que define o documento como HTML5, o padrão mais recente da linguagem HTML.</p></li>
+                
+                <li> &lt;html lang="pt-BR"&gt;: <p>A tag &lt;html&gt; é o elemento raiz de um documento HTML e engloba todo o conteúdo. O atributo lang define o idioma do documento, neste caso, Português do Brasil.</p></li>
 
-        <html lang="pt-BR">: A tag raiz que engloba todo o documento HTML, com o atributo lang especificando o idioma como português do Brasil.
+                <li> &lt;head&gt;: <p>Esta é a seção do cabeçalho do documento HTML. É onde você coloca metadados e informações sobre o documento que não são visíveis na página, mas são importantes para o navegador e motores de busca.</p></li>
 
-        <head>: A seção onde informações do documento são especificadas.
+                <li> &lt;meta charset="UTF-8"&gt;: <p>Define a codificação de caracteres como UTF-8, permitindo a exibição de caracteres especiais e internacionais no documento.</p></li>
 
-        <meta charset="UTF-8">: Especifica o conjunto de caracteres (UTF-8) para codificação de caracteres.
+                <li> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;: <p>Define o modo de compatibilidade do Internet Explorer para a versão mais recente disponível.</p></li>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">: Define as configurações de visualização em dispositivos móveis, ajustando a largura para o tamanho do dispositivo e a escala inicial para 1.
+                <li> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;: <p>Define como o navegador deve escalar a página em dispositivos móveis para ajustar o layout.</p></li>
 
-        <title>Aulas 01 e 02</title>: Define o título da página que aparecerá na aba do navegador.
+                <li> &lt;link rel="stylesheet" href="style.css"&gt;: <p>Referência externa a um arquivo CSS chamado "style.css" para estilizar a página.</p></li>
 
-        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">: Define um ícone de atalho (favicon) para a página.
+                <li> &lt;title&gt;Desenvolvimento Voltado a Web I&lt;/title&gt;: <p>Define o título da página, que é exibido na barra de título do navegador.</p></li>
 
-        <body>: O corpo da página onde o conteúdo é colocado.
+                <li> &lt;link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"&gt;: <p>Especifica o ícone de atalho (favicon) que aparece na guia do navegador.</p></li>
 
-        <h1> e <h3>: Tags de cabeçalho para títulos de seção.
+                <li> &lt;body class="inicio"&gt;:<p>A tag &lt;body&gt; engloba todo o conteúdo visível da página. O atributo class é usado para aplicar uma classe CSS específica a essa tag, o que permite a estilização personalizada.</p></li>
+                
+                <li> &lt;h1&gt; e &lt;h2&gt;: <p>São cabeçalhos de texto HTML. &lt;h1&gt; geralmente é usado para o título principal da página, enquanto &lt;h2&gt; é uma subdivisão de &lt;h1&gt;.</p></li>
 
-        <ul> e <li>: Tags para criar listas não ordenadas com itens de lista.
+                <li> &lt;nav&gt;: <p>Define uma seção de navegação no documento.</p></li>
 
-        <p>: Tags para parágrafos de texto.
+                <li> &lt;hr&gt;: <p>A tag &lt;hr&gt; cria uma linha horizontal que é usada para separar conteúdo, como uma divisão lógica entre seções. No caso do código fornecido, é usada para criar linhas horizontais que separam os elementos dentro da &lt;nav&gt;.</p></li>
 
-        <figure> e <figcaption>: Tags usadas para incorporar uma figura (imagem) com uma legenda.
+                <li> &lt;ul&gt; e &lt;li&gt;: <p>&lt;ul&gt; é uma lista não ordenada, enquanto &lt;li&gt; é um item de lista dentro dessa lista. Juntos, eles criam uma lista de itens. Neste caso, eles são usados para criar uma lista de links de navegação.</p></li>
 
-        <img>: Tag para exibir imagens.
+                <li> &lt;div class="dropdown"&gt; e &lt;button class="dropbtn"&gt;: <p>&lt;div&gt; é um elemento de divisão genérico usado para agrupar conteúdo. class="dropdown" é uma classe CSS que provavelmente é usada para controlar o comportamento de um menu suspenso. &lt;button&gt; cria um botão.</p></li>
 
-        <iframe>: Tag para incorporar vídeos do YouTube.
+                <li> &lt;div class="dropdown-content"&gt;: <p>Outro elemento &lt;div&gt; com a classe "dropdown-content", que provavelmente é usada para conter os itens do menu suspenso.</p></li>
 
-        <div class="video">: Uma div com uma classe chamada "video" que pode ser usada para estilizar ou manipular elementos com CSS ou JavaScript.
+                <li> &lt;a&gt;: <p>A tag &lt;a&gt; é usada para criar links. Os atributos href especificam o destino do link, ou seja, a página para a qual o link aponta.</p></li>
 
-        <hr>: Tag para criar uma linha horizontal, muitas vezes usada para separar seções de conteúdo.
+                <li> &lt;footer&gt;: <p>Esta é a seção de rodapé da página, onde geralmente são colocadas informações de contato, links de redes sociais e outros elementos de rodapé.</p></li>
 
-        <a>: Tags para criar hiperlinks, usadas para vincular a recursos externos ou internos. O atributo href especifica o URL de destino.
-
-        <iframe>: Tag para incorporar conteúdo da web em um documento, neste caso, um vídeo do YouTube.
-
-        <style>: Tag para inserir estilos CSS diretamente no documento HTML.
-
-        <script>: Tags para incorporar scripts JavaScript, usado para criar funcionalidade interativa na página. -->
-
+                <li> &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;: <p>Referência externa a um arquivo CSS chamado "font-awesome.min.css", que é uma biblioteca de ícones.</p></li>
+                
+                <li> &lt;a href="..." target="_blank" class="fa fa-..."&gt;&lt;/a&gt;: <p>Essas tags &lt;a&gt; são usadas para criar links para as redes sociais (Facebook, Twitter, LinkedIn e Instagram) com ícones de font-awesome. O atributo target="_blank" faz com que os links sejam abertos em uma nova aba/janela do navegador.</p></li>
+            </ul>
+        </article>
         <footer>
             <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>
         </footer>

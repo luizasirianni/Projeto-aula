@@ -16,18 +16,21 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 
+
 .inicio {
+  background: linear-gradient(90deg, var(--cor01), var(--cor02));
   font-family: var(--fontepadrao);
-  font-size: var(--fontesizebody);
+  font-size: 25px;
   background-color: var(--cor01);
   color: #c8c8c8;
   text-align: center;
   align-items: center;
   margin: auto;
   transition-duration: 0.5s;
-  max-width: 100%;
+  padding-top: 170px;
 }
 
 .inicio > h1, h2 {
@@ -35,6 +38,12 @@
   padding: 15px;
 }
 
+.inicio nav{
+  font-size: 20px;
+  font-family: var(--fontetitulo);
+  font-weight: 600;
+
+}
 a.inicio:visited{ 
     color: #c8c8c8;
   }
@@ -42,7 +51,6 @@ a.inicio:visited{
 .aulas_pgs {
     font-family: var(--fontepadrao);
     font-size: var(--fontesizebody);
-    /* background-color: var(--cor01); */
     max-width: 800px;
     min-width: 320px;
     margin: auto;
@@ -77,23 +85,89 @@ header > h4 {
 }
 
 nav {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.082);
+  
   padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 290px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
-nav > a {
+nav a {
   color: #c8c8c8;
   padding: 8px;
   text-decoration: none;
   transition-duration: 0.5s;
-
 }
 
-nav > a:hover{
-  background-color: var(--cor02);
-  border-radius: 5em;
-  text-decoration: underline;
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  
+}
 
+nav ul li {
+  display: inline;
+  margin-right: 10px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li.notdrop a:hover{
+  background-color: var(--cor02);
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cor02);
+  min-width: 90px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+  transition-duration: 0.5s;
+}
+
+.dropbtn {
+  border: none;
+  font-size: 20px;
+  font-family: var(--fontetitulo);
+  font-weight: 600;
+  background-color: transparent;
+  color: #c8c8c8;
+  padding: 8px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  line-height: 36px;
+}
+
+.dropbtn:hover{
+  background-color: #756b6b;
+  text-decoration: underline;
+}
+
+.dropdown-content a:hover{
+  background-color: #756b6b;
 }
 
 a.aulas_pgs:visited{
@@ -131,6 +205,15 @@ ul{
   padding: 10px;
 }
 
+.etags > li{
+  list-style-type: '\2757'; 
+  padding: 8px;
+  font-weight: bold;
+}
+
+.etags p{
+  font-weight: lighter;
+}
 .container li{
   padding-left: 10px;
 }
@@ -289,6 +372,7 @@ hr{
   margin-right: 10px;
 }
 
+
  footer > p{
     font-family: 'Encode Sans SC', sans-serif;;
     margin-bottom: 10px;
@@ -310,3 +394,4 @@ footer a {
 footer a:hover {
     color: rgb(180, 177, 177);
 }
+
