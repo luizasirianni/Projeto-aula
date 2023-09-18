@@ -131,6 +131,9 @@ ul{
   padding: 10px;
 }
 
+.container li{
+  padding-left: 10px;
+}
 .enum{
   list-style-type: lower-alpha;
   list-style-position: inside;
@@ -296,6 +299,7 @@ hr{
    /* background-color: #4d58bb; */
     
 }
+
 
 footer a {
     color: black;
