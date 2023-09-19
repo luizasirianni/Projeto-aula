@@ -46,20 +46,15 @@
         </div>
 
         <input type="submit" value="Enviar">
-
-        
-
     </form>
     <footer>
         <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>
     </footer>
     <script>
-        // Selecionar os elementos relevantes
         const radioOutros = document.getElementById('outros');
-        const detailsOutros = document.querySelector('.details'); // Alterado para '.details'
+        const detailsOutros = document.querySelector('.details'); 
         const radioButtons = document.querySelectorAll('input[name="linguagem"]');
-    
-        // Função para mostrar ou esconder a div de detalhes
+
         function toggleOutrosDetails() {
             if (radioOutros.checked) {
                 detailsOutros.style.display = 'block';
@@ -67,11 +62,8 @@
                 detailsOutros.style.display = 'none';
             }
         }
-    
-        // Adicionar um ouvinte de evento para o botão de rádio "Outros"
         radioOutros.addEventListener('change', toggleOutrosDetails);
-    
-        // Adicionar um ouvinte de evento para os outros botões de rádio
+
         radioButtons.forEach(function(radioButton) {
             radioButton.addEventListener('change', function() {
                 if (!radioOutros.checked) {
@@ -80,7 +72,6 @@
             });
         });
     
-        // Certificar-se de que o estado inicial corresponde à seleção inicial
         toggleOutrosDetails();
     </script>
 </body>
