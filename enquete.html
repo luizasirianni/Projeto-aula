@@ -12,6 +12,7 @@
     <title>Responda a enquete</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
 </head>
 <body class="aulas_pgs">
     <header>
@@ -37,11 +38,12 @@
         <input type="radio" id="outros" name="linguagem" value="Outros">
         <label for="outros">Outros</label><br><br>
         <!--to be resolved by JS, should open this option only when "outros" option is selected-->
-        <details>
-            <summary>Clique aqui caso tenha selecionado "Outros"</summary>
-            <label for="textoOutros">Por favor, especifique:</label>
-            <input type="text" id="textoOutros" name="textoOutros">
-        </details>
+        <div class="details">
+     
+         <label for="textoOutros">Por favor, especifique:</label>
+         <input type="text" id="textoOutros" name="textoOutros">
+     
+        </div>
 
         <input type="submit" value="Enviar">
 
@@ -51,5 +53,35 @@
     <footer>
         <p> &#169 2023 criado por <a href="https://www.linkedin.com/in/luiza-sirianni/">Luiza O. Sirianni</a> </p>
     </footer>
+    <script>
+        // Selecionar os elementos relevantes
+        const radioOutros = document.getElementById('outros');
+        const detailsOutros = document.querySelector('.details'); // Alterado para '.details'
+        const radioButtons = document.querySelectorAll('input[name="linguagem"]');
+    
+        // Função para mostrar ou esconder a div de detalhes
+        function toggleOutrosDetails() {
+            if (radioOutros.checked) {
+                detailsOutros.style.display = 'block';
+            } else {
+                detailsOutros.style.display = 'none';
+            }
+        }
+    
+        // Adicionar um ouvinte de evento para o botão de rádio "Outros"
+        radioOutros.addEventListener('change', toggleOutrosDetails);
+    
+        // Adicionar um ouvinte de evento para os outros botões de rádio
+        radioButtons.forEach(function(radioButton) {
+            radioButton.addEventListener('change', function() {
+                if (!radioOutros.checked) {
+                    detailsOutros.style.display = 'none';
+                }
+            });
+        });
+    
+        // Certificar-se de que o estado inicial corresponde à seleção inicial
+        toggleOutrosDetails();
+    </script>
 </body>
 </html>
